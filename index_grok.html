@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraniumX - Your 24/7 AI Receptionist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #1E3A8A;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #E5E7EB, #FFFFFF);
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1E3A8A;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            color: #4B5563;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #3B82F6;
+        }
+
+        /* How It Works */
+        #how-it-works {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .step img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #1E3A8A;
+        }
+
+        /* Pricing Section */
+        #pricing {
+            padding: 60px 20px;
+            background-color: #F9FAFB;
+            text-align: center;
+        }
+
+        #pricing h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .toggle label {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #4B5563;
+        }
+
+        .toggle input {
+            display: none;
+        }
+
+        .toggle label.active {
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            border-radius: 10px;
+            padding: 30px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card.popular::before {
+            content: 'Most Popular';
+            background-color: #1E3A8A;
+            color: #FFFFFF;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card .price {
+            font-size: 2rem;
+            color: #1E3A8A;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            color: #4B5563;
+            margin-bottom: 20px;
+        }
+
+        .setup-fee {
+            font-size: 0.9rem;
+            color: #4B5563;
+            margin-top: 40px;
+        }
+
+        /* Testimonials */
+        #testimonials {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #4B5563;
+        }
+
+        /* FAQ */
+        #faq {
+            padding: 60px 20px;
+            background-color: #F9FAFB;
+        }
+
+        #faq h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1E3A8A;
+        }
+
+        .faq-item p {
+            color: #4B5563;
+        }
+
+        /* Final CTA */
+        #final-cta {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #1E3A8A, #3B82F6);
+            color: #FFFFFF;
+        }
+
+        #final-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 1.8rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            .steps, .pricing-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://via.placeholder.com/150x50?text=BraniumX+Logo" alt="BraniumX Logo">
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Your 24/7 AI Receptionist — Book More Appointments, Grow Your Business</h1>
+            <p>Never miss a call again. BraniumX answers, follows up, and books your clients — all while you focus on your business.</p>
+            <button class="cta-button">Start Free Demo</button>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="https://via.placeholder.com/60?text=Icon" alt="Answer Icon">
+                    <h3>Answer</h3>
+                    <p>AI picks up calls instantly.</p>
+                </div>
+                <div class="step">
+                    <img src="https://via.placeholder.com/60?text=Icon" alt="Book Icon">
+                    <h3>Book</h3>
+                    <p>Schedules directly into the client’s calendar.</p>
+                </div>
+                <div class="step">
+                    <img src="https://via.placeholder.com/60?text=Icon" alt="Remind Icon">
+                    <h3>Remind</h3>
+                    <p>Sends SMS reminders to reduce no-shows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="toggle">
+                <input type="radio" name="pricing" id="monthly" checked>
+                <label for="monthly" class="active">Monthly</label>
+                <input type="radio" name="pricing" id="yearly">
+                <label for="yearly">Yearly (20% Off)</label>
+            </div>
+            <div class="pricing-cards">
+                <div class="card">
+                    <h3>Starter</h3>
+                    <div class="price monthly">$199/mo</div>
+                    <div class="price yearly" style="display: none;">$1,915/yr</div>
+                    <p>Perfect for small businesses getting started.</p>
+                    <button class="cta-button" onclick="window.location.href='checkout.html'">Get Started</button>
+                </div>
+                <div class="card popular">
+                    <h3>Growth</h3>
+                    <div class="price monthly">$299/mo</div>
+                    <div class="price yearly" style="display: none;">$2,870/yr</div>
+                    <p>Ideal for growing businesses with higher call volumes.</p>
+                    <button class="cta-button" onclick="window.location.href='checkout.html'">Get Started</button>
+                </div>
+                <div class="card">
+                    <h3>Pro</h3>
+                    <div class="price monthly">$499/mo</div>
+                    <div class="price yearly" style="display: none;">$4,790/yr</div>
+                    <p>Advanced features for enterprise needs.</p>
+                    <button class="cta-button" onclick="window.location.href='checkout.html'">Book a Demo</button>
+                </div>
+            </div>
+            <p class="setup-fee">All plans include a $399 one-time setup fee (script, Twilio setup, CRM integration).</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/60?text=Profile" alt="Customer Profile">
+                <p>"BraniumX transformed our customer service. We never miss a call now!"</p>
+                <p><strong>Jane Doe, Small Business Owner</strong></p>
+            </div>
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/60?text=Profile" alt="Customer Profile">
+                <p>"The AI books appointments flawlessly and saves us hours every day."</p>
+                <p><strong>John Smith, SaaS Founder</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I cancel my plan anytime?</h3>
+                <p>Yes, all plans are flexible with no long-term contracts. Cancel anytime with 30 days' notice.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What happens if I exceed my plan's minutes?</h3>
+                <p>Overage minutes are billed at a low rate of $0.05 per minute, ensuring you only pay for what you use.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does BraniumX integrate with my CRM?</h3>
+                <p>Absolutely! We support integrations with major CRMs like Salesforce, HubSpot, and Zoho during setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="final-cta">
+        <div class="container">
+            <h2>Stop Missing Calls. Start Booking More Clients.</h2>
+            <p>Join BraniumX today and let AI handle your phones — 24/7.</p>
+            <button class="cta-button">Book My Demo Now</button>
+        </div>
+    </section>
+
+    <script>
+        // Pricing Toggle Logic
+        const monthlyRadio = document.getElementById('monthly');
+        const yearlyRadio = document.getElementById('yearly');
+        const monthlyPrices = document.querySelectorAll('.price.monthly');
+        const yearlyPrices = document.querySelectorAll('.price.yearly');
+        const monthlyLabel = document.querySelector('label[for="monthly"]');
+        const yearlyLabel = document.querySelector('label[for="yearly"]');
+
+        monthlyRadio.addEventListener('change', () => {
+            monthlyPrices.forEach(price => price.style.display = 'block');
+            yearlyPrices.forEach(price => price.style.display = 'none');
+            monthlyLabel.classList.add('active');
+            yearlyLabel.classList.remove('active');
+        });
+
+        yearlyRadio.addEventListener('change', () => {
+            monthlyPrices.forEach(price => price.style.display = 'none');
+            yearlyPrices.forEach(price => price.style.display = 'block');
+            yearlyLabel.classList.add('active');
+            monthlyLabel.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

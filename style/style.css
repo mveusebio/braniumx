@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #011e3c;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.hero {
+  background: linear-gradient(90deg, #011e3c, #055e8a);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.btn-primary {
+  background: #ff9900;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+section {
+  padding: 40px 0;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.price {
+  font-size: 1.2em;
+  color: #055e8a;
+  font-weight: bold;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
