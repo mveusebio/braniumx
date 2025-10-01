@@ -1,0 +1,150 @@
+/* style/pricing.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.toggle-wrapper {
+  display: inline-flex;
+  position: relative;
+  background-color: #033d5a;
+  border-radius: 8px;
+  padding: 0.25rem;
+  width: 14rem;
+}
+
+.toggle-background {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  width: 50%;
+  background-color: #055e8a;
+  border-radius: 8px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.toggle-background.yearly {
+  transform: translateX(0);
+}
+
+.toggle-background.monthly {
+  transform: translateX(100%);
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif; /* Match main.css */
+}
+
+.toggle-btn.active {
+  color: #fff;
+}
+
+.toggle-btn:not(.active):hover {
+  color: #fff;
+}
+
+.discount-text {
+  font-size: 0.75rem;
+  color: #a3bffa;
+}
+
+.discount-text.active {
+  color: #dbeafe;
+}
+
+.pricing-cards {
+  flex-wrap: nowrap; /* Force cards side by side */
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card.featured {
+  background-color: #011e3c; /* Match section.dark from main.css */
+  color: #fff; /* White text for contrast */
+  border: 2px solid #055e8a;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured .card-price,
+.pricing-card.featured .card-description,
+.pricing-card.featured .card-features li {
+  color: #fff; /* Ensure text is white for readability */
+}
+
+.card-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.price-unit {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-features li {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #055e8a;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-bottom-left-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; /* Stack vertically on mobile */
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .toggle-wrapper {
+    width: 12rem;
+  }
+}

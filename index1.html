@@ -1,134 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BraniumX – AI Receptionist</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #011e3c; }
-    header { text-align: center; padding: 40px 20px; background: #f7f9fc; }
-    header h1 { font-size: 2em; margin-bottom: 10px; }
-    header p { color: #555; }
-    .cta-btn { background: #055e8a; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; font-weight: bold; }
-    .pricing-section { text-align: center; padding: 50px 20px; }
-    .toggle { margin-bottom: 20px; }
-    .cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 25px; width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: left; }
-    .card h3 { margin-top: 0; }
-    .card ul { list-style: none; padding: 0; margin: 15px 0; }
-    .card ul li { margin: 8px 0; }
-    .card .price { font-size: 1.5em; font-weight: bold; margin: 10px 0; }
-    .card .yearly { display: none; font-size: 0.9em; color: #555; }
-    .note { margin-top: 20px; font-size: 0.9em; color: #777; }
-    .faq, .testimonials, .final-cta { padding: 50px 20px; text-align: center; background: #f7f9fc; }
-    .faq h2, .testimonials h2, .final-cta h2 { margin-bottom: 20px; }
-    .final-cta a { background: #055e8a; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 1.1em; }
-    footer { text-align: center; padding: 20px; background: #011e3c; color: white; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BraniumX - AI Voice Agents</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/pricing.css" />
+  <script defer src="js/main.js"></script>
+  <script defer src="js/pricing.js"></script>
 </head>
 <body>
-
-<header>
-  <h1>Your 24/7 AI Receptionist — Book More Appointments, Grow Your Business</h1>
-  <p>Never miss a call again. BraniumX answers, follows up, and books your clients — while you focus on your business.</p>
-  <a href="#pricing" class="cta-btn">Start Free Demo</a>
-</header>
-
-<section id="pricing" class="pricing-section">
-  <h2>Simple Pricing. Big Results.</h2>
-  <p>Choose monthly or save 20% with yearly billing.</p>
-  
-  <div class="toggle">
-    <label><input type="radio" name="billing" value="monthly" checked> Monthly</label>
-    <label style="margin-left:15px;"><input type="radio" name="billing" value="yearly"> Yearly (Save 20%)</label>
-  </div>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Starter</h3>
-      <div class="price monthly">$199/mo</div>
-      <div class="price yearly">$1,915/yr</div>
-      <ul>
-        <li>500 call minutes</li>
-        <li>Inbound calls only</li>
-        <li>Appointment booking</li>
-        <li>Basic monthly report</li>
-      </ul>
-      <a href="checkout.html" class="cta-btn">Get Started</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/braniumX.jpg" alt="BraniumX Logo" />
     </div>
-    
-    <div class="card" style="border: 2px solid #055e8a;">
-      <h3>Growth (Most Popular)</h3>
-      <div class="price monthly">$299/mo</div>
-      <div class="price yearly">$2,870/yr</div>
-      <ul>
-        <li>1,500 call minutes</li>
-        <li>Inbound + outbound</li>
-        <li>SMS reminders</li>
-        <li>Missed-call text back</li>
-        <li>Performance reports</li>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="checkout.html" class="cta-btn">Start Free Demo</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Never Miss a Call Again</h1>
+      <p>AI Voice Agents that answer calls, book appointments, and grow your business 24/7.</p>
+      <a href="#contact" class="cta-btn">Book a Demo</a>
     </div>
-    
-    <div class="card">
-      <h3>Pro</h3>
-      <div class="price monthly">$499/mo</div>
-      <div class="price yearly">$4,790/yr</div>
-      <ul>
-        <li>3,500 call minutes</li>
-        <li>Full inbound + outbound</li>
-        <li>SMS reminders & follow-up</li>
-        <li>CRM integration</li>
-        <li>Custom reporting</li>
-        <li>Priority support</li>
-      </ul>
-      <a href="checkout.html" class="cta-btn">Book a Demo</a>
+    <div class="hero-image">
+      <img src="images/hero-ai.png" alt="AI answering calls illustration" />
     </div>
-  </div>
+  </section>
 
-  <p class="note">All plans include a $399 one-time setup fee (script, Twilio setup, CRM integration).</p>
-</section>
+  <!-- How It Works -->
+  <section id="how" class="section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1</h3>
+        <p>Customer calls your business</p>
+      </div>
+      <div class="step">
+        <h3>2</h3>
+        <p>AI Agent answers instantly</p>
+      </div>
+      <div class="step">
+        <h3>3</h3>
+        <p>Books appointment in your calendar</p>
+      </div>
+      <div class="step">
+        <h3>4</h3>
+        <p>You focus on your business</p>
+      </div>
+    </div>
+  </section>
 
-<section class="testimonials">
-  <h2>Testimonials</h2>
-  <p>“Since switching to BraniumX, I’ve doubled my appointments and stopped worrying about missed calls.” – Salon Owner</p>
-</section>
+  <!-- Solutions -->
+  <section id="solutions" class="section dark">
+    <h2>Solutions</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Inbound AI Agent</h3>
+        <p>Answer calls 24/7, schedule bookings, and reduce lost customers.</p>
+      </div>
+      <div class="card">
+        <h3>Future Outbound Agent</h3>
+        <p>Automated follow-ups, reminders, and customer engagement.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="faq">
-  <h2>FAQ</h2>
-  <p><strong>Do I need new software?</strong><br>No, BraniumX works with your current calendar or CRM.</p>
-  <p><strong>What if I go over my minutes?</strong><br>Extra minutes are billed at $0.10/min.</p>
-  <p><strong>Can I cancel anytime?</strong><br>Yes, there are no long-term contracts.</p>
-</section>
+  <!-- Industries -->
+  <section id="industries" class="section">
+    <h2>Industries We Help</h2>
+    <ul class="industry-list">
+      <li>Beauty & Wellness (salons, spas)</li>
+      <li>Restaurants & Hospitality</li>
+      <li>Healthcare & Clinics</li>
+      <li>Real Estate & Services</li>
+      <li>Any business that books by phone</li>
+    </ul>
+  </section>
 
-<section class="final-cta">
-  <h2>Stop Missing Calls. Start Booking More Clients.</h2>
-  <p>Join BraniumX today and let AI handle your phones — 24/7.</p>
-  <a href="checkout.html">Book My Demo Now</a>
-</section>
+  <!-- Pricing -->
+  <section id="pricing" class="section dark">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+      <!-- Toggle Switch -->
+      <div class="toggle-container">
+        <div class="toggle-wrapper">
+          <span class="toggle-background" id="toggle-background"></span>
+          <button id="yearly-toggle" class="toggle-btn">Yearly <span class="discount-text">(20% off)</span></button>
+          <button id="monthly-toggle" class="toggle-btn">Monthly</button>
+        </div>
+      </div>
+      <!-- Pricing Cards -->
+      <div class="pricing-cards">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p class="card-price"><span id="starter-price">$199</span> <span class="price-unit">/ month</span></p>
+          <p class="card-description">Perfect for small businesses</p>
+          <ul class="card-features">
+            <li>✓ Up to 100 calls/month</li>
+            <li>✓ Basic AI Voice Agent</li>
+            <li>✓ Calendar Integration</li>
+            <li>✓ Email Support</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+        <!-- Growth Plan -->
+        <div class="pricing-card featured">
+          <span class="featured-badge">Most Popular</span>
+          <h3>Growth</h3>
+          <p class="card-price"><span id="growth-price">$499</span> <span class="price-unit">/ month</span></p>
+          <p class="card-description">Scales with your call volume</p>
+          <ul class="card-features">
+            <li>✓ Up to 500 calls/month</li>
+            <li>✓ Advanced AI Voice Agent</li>
+            <li>✓ Multi-Calendar Support</li>
+            <li>✓ Priority Support</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+        <!-- Enterprise Plan -->
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <p class="card-price">Custom</p>
+          <p class="card-description">Multi-location, heavy calls</p>
+          <ul class="card-features">
+            <li>✓ Unlimited calls</li>
+            <li>✓ Custom AI Voice Agent</li>
+            <li>✓ Dedicated Account Manager</li>
+            <li>✓ 24/7 Premium Support</li>
+          </ul>
+          <a href="#contact" class="cta-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2025 BraniumX – All Rights Reserved</p>
-</footer>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-btn">Send</button>
+    </form>
+  </section>
 
-<script>
-  const radios = document.querySelectorAll('input[name="billing"]');
-  const pricesMonthly = document.querySelectorAll('.price.monthly');
-  const pricesYearly = document.querySelectorAll('.price.yearly');
-
-  radios.forEach(radio => {
-    radio.addEventListener('change', () => {
-      if (radio.value === 'yearly') {
-        pricesMonthly.forEach(el => el.style.display = 'none');
-        pricesYearly.forEach(el => el.style.display = 'block');
-      } else {
-        pricesMonthly.forEach(el => el.style.display = 'block');
-        pricesYearly.forEach(el => el.style.display = 'none');
-      }
-    });
-  });
-</script>
-
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 BraniumX LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>
