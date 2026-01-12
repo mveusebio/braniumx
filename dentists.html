@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI receptionist for dental practices - Never lose another patient to a missed call. BraniumX answers 24/7, schedules appointments, and handles patient inquiries.">
+  <title>AI Receptionist for Dental Practices - BraniumX</title>
+  
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <style>
+    .industry-dental .hero-badge,
+    .industry-dental .section-label {
+      color: #0EA5E9;
+    }
+    .industry-dental .hero-title .highlight {
+      color: #0EA5E9;
+    }
+    .industry-dental .btn-primary {
+      background: #0EA5E9;
+    }
+    .industry-dental .btn-primary:hover {
+      background: #0284C7;
+      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.3);
+    }
+    .industry-dental .solution-feature-icon,
+    .industry-dental .value-icon {
+      background: rgba(14, 165, 233, 0.1);
+    }
+    .industry-dental .solution-feature-icon i,
+    .industry-dental .value-icon i {
+      color: #0EA5E9;
+    }
+    .industry-dental .step-number {
+      background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+    }
+    .industry-dental .pricing-card.featured {
+      border-color: #0EA5E9;
+    }
+    .industry-dental .pricing-badge {
+      background: #0EA5E9;
+    }
+    .industry-dental .pricing-feature i {
+      color: #0EA5E9;
+    }
+  </style>
+</head>
+<body class="industry-dental">
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        Branium<span>X</span>
+      </a>
+      
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+        
+        <div class="navbar-cta">
+          <a href="demo.html" class="btn btn-primary">Get Demo</a>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+      <li><a href="pricing.html" class="mobile-menu-link">Pricing</a></li>
+      <li><a href="about.html" class="mobile-menu-link">About</a></li>
+      <li><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!-- Industry Hero -->
+  <section class="industry-hero">
+    <div class="container">
+      <div class="industry-hero-grid">
+        <div class="industry-hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-tooth"></i>
+            <span>Built for Dental Practices</span>
+          </div>
+          
+          <h1>Never Lose Another <span class="highlight">Patient</span> to a Missed Call</h1>
+          
+          <p>AI-powered receptionist that answers every call, schedules appointments, and handles patient inquiries—24/7. Always professional. Always available.</p>
+          
+          <div class="hero-cta">
+            <a href="demo.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-play-circle"></i>
+              See How It Works
+            </a>
+            <a href="pricing.html" class="btn btn-outline btn-lg">
+              View Pricing
+            </a>
+          </div>
+          
+          <div class="hero-stats" style="margin-top: 40px;">
+            <div class="hero-stat">
+              <div class="hero-stat-value">35%</div>
+              <div class="hero-stat-label">Calls Missed (Industry Avg)</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">$500+</div>
+              <div class="hero-stat-label">Lost Per Missed Patient</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">0</div>
+              <div class="hero-stat-label">Missed with BraniumX</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="industry-hero-image">
+          <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 40px; border: 1px solid rgba(255,255,255,0.2);">
+            <div style="background: white; border-radius: 30px; padding: 30px; text-align: center;">
+              <i class="fas fa-tooth" style="font-size: 64px; color: #0EA5E9; margin-bottom: 20px;"></i>
+              <h3 style="color: var(--text); margin-bottom: 10px;">Smile Dental Group</h3>
+              <p style="color: var(--text-light); margin-bottom: 20px;">AI Receptionist Active</p>
+              <div style="background: var(--light-gray); border-radius: var(--radius-md); padding: 16px; text-align: left;">
+                <p style="font-size: 14px; color: var(--text); margin: 0; font-style: italic;">"Thank you for calling Smile Dental Group! I'd be happy to help you schedule an appointment. Are you a new or existing patient?"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Problem Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Your Front Desk Can't Do It All</h2>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-phone-slash" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Patients call during lunch—no one answers</h4>
+              <p style="color: var(--text-light); margin: 0;">When your front desk takes a break, calls go to voicemail. New patient inquiries often don't leave messages—they call another dentist.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-user-plus" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">New patient inquiries slip through</h4>
+              <p style="color: var(--text-light); margin: 0;">67% of patients won't leave a voicemail. Each new patient is worth $500-2,000+ in initial treatment—gone in seconds.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-users" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Staff is busy with check-ins</h4>
+              <p style="color: var(--text-light); margin: 0;">When patients are at the desk checking in or checking out, the phone rings and rings. Something has to give.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-moon" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">After-hours emergencies get lost</h4>
+              <p style="color: var(--text-light); margin: 0;">Patients with urgent issues call after 5pm. Without proper handling, they go to the ER or another practice.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-dollar-sign" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Each missed call = $500-2,000 lost</h4>
+              <p style="color: var(--text-light); margin: 0;">Between cleanings, x-rays, fillings, and larger procedures, a new patient represents significant lifetime value.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Solution Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="solution-grid">
+        <div class="solution-content">
+          <span class="section-label">The Solution</span>
+          <h2>Your AI Receptionist Handles It All</h2>
+          <p>BraniumX answers every call to your practice instantly—even during lunch, after hours, and on weekends. It schedules appointments, answers insurance questions, and routes urgent calls appropriately.</p>
+          
+          <div class="solution-features">
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Answers Every Call</h4>
+                <p>No more missed calls during busy times. AI picks up instantly, 24/7.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-calendar-plus"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Schedules Appointments</h4>
+                <p>Books hygiene visits, consultations, and follow-ups directly into your system.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-id-card"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Handles Insurance Questions</h4>
+                <p>Provides info on accepted insurance plans and payment options.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Routes Urgent Calls</h4>
+                <p>Identifies emergencies and routes them to on-call staff immediately.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Sends Reminders</h4>
+                <p>Automatic appointment reminders reduce no-shows and last-minute cancellations.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>New Patient Intake</h4>
+                <p>Collects basic info and sends new patient forms before their visit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 32px;">
+            <a href="demo.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-play-circle"></i>
+              See It In Action
+            </a>
+          </div>
+        </div>
+        
+        <div class="solution-image">
+          <div style="background: white; border-radius: var(--radius-xl); padding: 40px; box-shadow: 0 20px 40px var(--shadow);">
+            <h3 style="text-align: center; margin-bottom: 30px;">Sample Conversation</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> Hi, I'm looking for a new dentist. Do you accept Delta Dental insurance?</p>
+              </div>
+              
+              <div style="background: #0EA5E9; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> Welcome! Yes, we do accept Delta Dental PPO and Premier plans. We're currently accepting new patients. Would you like to schedule a new patient exam and cleaning?</p>
+              </div>
+              
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> Yes, that would be great. What's available?</p>
+              </div>
+              
+              <div style="background: #0EA5E9; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> I have openings this Thursday at 10am or Friday at 2pm. The new patient exam takes about 60-90 minutes and includes x-rays, cleaning, and consultation with Dr. Smith. Which works better for you?</p>
+              </div>
+              
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> Thursday at 10am works.</p>
+              </div>
+              
+              <div style="background: #0EA5E9; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> Perfect! I've scheduled you for Thursday at 10am. Can I get your name, phone number, and email? I'll send you our new patient forms to complete before your visit.</p>
+              </div>
+            </div>
+            
+            <div style="margin-top: 24px; padding: 16px; background: #ECFDF5; border-radius: var(--radius-md); display: flex; align-items: center; gap: 12px;">
+              <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.5rem;"></i>
+              <div>
+                <strong style="color: #065F46;">New Patient Booked!</strong>
+                <p style="margin: 0; font-size: 13px; color: #047857;">Forms sent automatically via email</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Numbers</span>
+        <h2 class="section-title">Why Dental Practices Are Switching to AI</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center;">
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #0EA5E9;">35%</div>
+          <div style="color: var(--text-light);">Calls Missed (Industry Avg)</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #0EA5E9;">67%</div>
+          <div style="color: var(--text-light);">Won't Leave Voicemail</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #0EA5E9;">$1,500</div>
+          <div style="color: var(--text-light);">Avg New Patient Value</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #0EA5E9;">0%</div>
+          <div style="color: var(--text-light);">Missed with BraniumX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonial Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Success Story</span>
+        <h2 class="section-title">What Dental Practices Say</h2>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="testimonial-card" style="padding: 48px; text-align: center;">
+          <div class="testimonial-rating" style="justify-content: center;">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text" style="font-size: 1.25rem; max-width: 600px; margin: 24px auto;">"Our front desk was overwhelmed trying to answer phones while checking patients in. BraniumX handles overflow and after-hours calls perfectly. We've captured 15 new patients this month that would have gone to voicemail before."</p>
+          <div class="testimonial-author" style="justify-content: center;">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #0EA5E9, #0284C7);">RC</div>
+            <div class="testimonial-info" style="text-align: left;">
+              <h4>Dr. Robert Chen</h4>
+              <p>Owner, Smile Dental Group</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features for Dental -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Dental-Specific Features</span>
+        <h2 class="section-title">Built for How Dental Practices Work</h2>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-clipboard-list" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>Appointment Types</h4>
+          <p style="color: var(--text-light); margin: 0;">Handles new patient exams, cleanings, fillings, crowns, emergencies, and more—with appropriate time slots.</p>
+        </div>
+        
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-id-card" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>Insurance Verification</h4>
+          <p style="color: var(--text-light); margin: 0;">Answers questions about accepted plans, collects insurance info from new patients.</p>
+        </div>
+        
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-ambulance" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>Emergency Routing</h4>
+          <p style="color: var(--text-light); margin: 0;">Identifies dental emergencies and routes them to on-call staff or provides emergency instructions.</p>
+        </div>
+        
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-file-medical" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>New Patient Forms</h4>
+          <p style="color: var(--text-light); margin: 0;">Automatically sends intake forms and medical history questionnaires before appointments.</p>
+        </div>
+        
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-user-md" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>Provider Selection</h4>
+          <p style="color: var(--text-light); margin: 0;">Books appointments with specific dentists or hygienists based on patient preference.</p>
+        </div>
+        
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); text-align: center;">
+          <div style="width: 64px; height: 64px; background: rgba(14, 165, 233, 0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+            <i class="fas fa-sync" style="font-size: 1.75rem; color: #0EA5E9;"></i>
+          </div>
+          <h4>PMS Integration</h4>
+          <p style="color: var(--text-light); margin: 0;">Works with Dentrix, Eaglesoft, Open Dental, and other practice management systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Preview -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Plans for Every Practice</h2>
+        <p class="section-subtitle">From solo practitioners to multi-location groups</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-description">Solo practitioners</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">297</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>500 minutes/month</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Appointment scheduling</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>SMS confirmations</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Insurance FAQ handling</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>After-hours coverage</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="demo.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Best for Practices</span>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-description">Group practices</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">497</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>1,500 minutes/month</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Everything in Starter</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Appointment reminders</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>New patient forms</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Emergency routing</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Review requests</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="demo.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <p class="pricing-description">Multi-location DSOs</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">997</span>
+              <span class="pricing-period">+/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Unlimited minutes</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Multiple locations</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Full CRM platform</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>PMS integrations</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Dedicated support</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Custom reporting</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      
+      <p class="pricing-note">All plans include a one-time $497 setup fee</p>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Questions from Dental Practices</h2>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is it HIPAA compliant?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes. BraniumX follows HIPAA guidelines for handling patient information. We sign Business Associate Agreements (BAAs) with healthcare clients. Call recordings are encrypted and stored securely.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does it integrate with my practice management software?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>We integrate with most major dental PMS systems including Dentrix, Eaglesoft, Open Dental, Curve Dental, and others. If you use a different system, contact us to discuss integration options.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does it handle dental emergencies?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>The AI is trained to identify dental emergencies (severe pain, swelling, trauma, etc.). Based on your preferences, it can immediately transfer to an on-call number, provide emergency instructions, or take detailed messages for urgent callback.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can it schedule for multiple providers?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes! The AI can check availability for multiple dentists and hygienists, ask patient preferences, and book with the right provider. It handles complex scheduling rules like operatory assignments and provider-specific appointment types.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What about insurance verification?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>The AI can answer questions about which insurance plans you accept, collect insurance information from new patients, and explain your payment policies. Full eligibility verification is still handled by your team, but the AI captures all the info they need.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Capture Every Patient Call?</h2>
+        <p>Join dental practices across the country already using BraniumX.</p>
+        <div class="cta-buttons">
+          <a href="demo.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-calendar-alt"></i>
+            Book Your Free Demo
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo">
+            Branium<span>X</span>
+          </a>
+          <p>AI-powered voice receptionists for small businesses. Never miss another customer call.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#solution" class="footer-link">Features</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="demo.html" class="footer-link">Get Demo</a></li>
+            <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul class="footer-links">
+            <li><a href="nail-salons.html" class="footer-link">Nail Salons</a></li>
+            <li><a href="dentists.html" class="footer-link">Dentists</a></li>
+            <li><a href="#" class="footer-link">Med Spas</a></li>
+            <li><a href="#" class="footer-link">Home Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 BraniumX LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
