@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI receptionist for nail salons - Never miss another booking. BraniumX answers calls 24/7, books appointments, and sends reminders while you focus on your clients.">
+  <title>AI Receptionist for Nail Salons - BraniumX</title>
+  
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <style>
+    .industry-nail .hero-badge,
+    .industry-nail .section-label {
+      color: #EC4899;
+    }
+    .industry-nail .hero-title .highlight {
+      color: #EC4899;
+    }
+    .industry-nail .btn-primary {
+      background: #EC4899;
+    }
+    .industry-nail .btn-primary:hover {
+      background: #DB2777;
+      box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+    }
+    .industry-nail .solution-feature-icon,
+    .industry-nail .value-icon {
+      background: rgba(236, 72, 153, 0.1);
+    }
+    .industry-nail .solution-feature-icon i,
+    .industry-nail .value-icon i {
+      color: #EC4899;
+    }
+    .industry-nail .step-number {
+      background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
+    }
+    .industry-nail .pricing-card.featured {
+      border-color: #EC4899;
+    }
+    .industry-nail .pricing-badge {
+      background: #EC4899;
+    }
+    .industry-nail .pricing-feature i {
+      color: #EC4899;
+    }
+  </style>
+</head>
+<body class="industry-nail">
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        Branium<span>X</span>
+      </a>
+      
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+        
+        <div class="navbar-cta">
+          <a href="demo.html" class="btn btn-primary">Get Demo</a>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="mobile-menu-links">
+      <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+      <li><a href="pricing.html" class="mobile-menu-link">Pricing</a></li>
+      <li><a href="about.html" class="mobile-menu-link">About</a></li>
+      <li><a href="contact.html" class="mobile-menu-link">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!-- Industry Hero -->
+  <section class="industry-hero">
+    <div class="container">
+      <div class="industry-hero-grid">
+        <div class="industry-hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-spa"></i>
+            <span>Built for Nail Salons</span>
+          </div>
+          
+          <h1>Never Miss Another <span class="highlight">Nail Appointment</span> Again</h1>
+          
+          <p>AI receptionist that answers calls, books appointments, and sends reminders—while you focus on making your clients beautiful.</p>
+          
+          <div class="hero-cta">
+            <a href="demo.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-play-circle"></i>
+              See How It Works
+            </a>
+            <a href="pricing.html" class="btn btn-outline btn-lg">
+              View Pricing
+            </a>
+          </div>
+          
+          <div class="hero-stats" style="margin-top: 40px;">
+            <div class="hero-stat">
+              <div class="hero-stat-value">40%</div>
+              <div class="hero-stat-label">More Bookings</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">0</div>
+              <div class="hero-stat-label">Missed Calls</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">24/7</div>
+              <div class="hero-stat-label">Availability</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="industry-hero-image">
+          <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 40px; border: 1px solid rgba(255,255,255,0.2);">
+            <div style="background: white; border-radius: 30px; padding: 30px; text-align: center;">
+              <i class="fas fa-spa" style="font-size: 64px; color: #EC4899; margin-bottom: 20px;"></i>
+              <h3 style="color: var(--text); margin-bottom: 10px;">Bella Nails Studio</h3>
+              <p style="color: var(--text-light); margin-bottom: 20px;">AI Receptionist Active</p>
+              <div style="background: var(--light-gray); border-radius: var(--radius-md); padding: 16px; text-align: left;">
+                <p style="font-size: 14px; color: var(--text); margin: 0; font-style: italic;">"Thank you for calling Bella Nails! I'd be happy to help you book an appointment. What day works best for you?"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Problem Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Sound Familiar?</h2>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-phone-slash" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Phone rings while you're mid-manicure</h4>
+              <p style="color: var(--text-light); margin: 0;">You can't stop to answer, and by the time you're done, the caller has already booked with someone else.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-moon" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Weekend and evening calls go to voicemail</h4>
+              <p style="color: var(--text-light); margin: 0;">Potential clients call after hours to book, but nobody's there to answer. They don't leave messages—they call your competitor.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-user-clock" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">No-shows cost you money</h4>
+              <p style="color: var(--text-light); margin: 0;">Clients forget their appointments because you don't have time to send reminders manually. Empty chairs = lost revenue.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-dollar-sign" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">You can't afford a receptionist</h4>
+              <p style="color: var(--text-light); margin: 0;">Hiring someone just to answer phones would cost $2,500+ per month—more than you can justify for a small salon.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; background: #FEE2E2; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-redo" style="color: #DC2626; font-size: 1.25rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin-bottom: 8px;">Repeat questions eat your time</h4>
+              <p style="color: var(--text-light); margin: 0;">"What are your hours?" "How much is a gel manicure?" "Do you take walk-ins?" Over and over again, all day long.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Solution Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="solution-grid">
+        <div class="solution-content">
+          <span class="section-label">The Solution</span>
+          <h2>Your AI Receptionist Handles It All</h2>
+          <p>BraniumX answers every call to your salon instantly—even at 10pm on a Saturday. It books appointments, answers questions, and sends confirmations, so you never miss another client.</p>
+          
+          <div class="solution-features">
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Answers Every Call</h4>
+                <p>No more missed calls while you're with clients. AI picks up in under 1 second.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-calendar-plus"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Books Appointments</h4>
+                <p>Checks your availability and books directly into your calendar system.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Sends Reminders</h4>
+                <p>Automatic SMS reminders reduce no-shows by up to 40%.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Answers FAQs</h4>
+                <p>Hours, prices, services, parking—your AI knows it all.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-moon"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Works After Hours</h4>
+                <p>Capture late-night bookers and weekend callers automatically.</p>
+              </div>
+            </div>
+            
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="solution-feature-text">
+                <h4>Multiple Languages</h4>
+                <p>Serve diverse clients with multilingual support options.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 32px;">
+            <a href="demo.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-play-circle"></i>
+              See It In Action
+            </a>
+          </div>
+        </div>
+        
+        <div class="solution-image">
+          <div style="background: white; border-radius: var(--radius-xl); padding: 40px; box-shadow: 0 20px 40px var(--shadow);">
+            <h3 style="text-align: center; margin-bottom: 30px;">Sample Conversation</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> Hi, I'd like to book a gel manicure.</p>
+              </div>
+              
+              <div style="background: #EC4899; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> I'd be happy to help! A gel manicure takes about 45 minutes and is $45. What day works best for you?</p>
+              </div>
+              
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> How about Saturday afternoon?</p>
+              </div>
+              
+              <div style="background: #EC4899; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> I have openings at 2pm and 3:30pm this Saturday. Which would you prefer?</p>
+              </div>
+              
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> 2pm works great!</p>
+              </div>
+              
+              <div style="background: #EC4899; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> Perfect! I've booked you for a gel manicure this Saturday at 2pm. Can I get your name and phone number for the confirmation?</p>
+              </div>
+              
+              <div style="background: var(--light-gray); padding: 16px; border-radius: 16px 16px 16px 4px; max-width: 85%;">
+                <p style="margin: 0; font-size: 14px;"><strong>Caller:</strong> Sarah, 555-123-4567</p>
+              </div>
+              
+              <div style="background: #EC4899; color: white; padding: 16px; border-radius: 16px 16px 4px 16px; max-width: 85%; margin-left: auto;">
+                <p style="margin: 0; font-size: 14px;"><strong>AI:</strong> You're all set, Sarah! I'm sending a confirmation text now. We'll see you Saturday at 2pm. Is there anything else I can help with?</p>
+              </div>
+            </div>
+            
+            <div style="margin-top: 24px; padding: 16px; background: #ECFDF5; border-radius: var(--radius-md); display: flex; align-items: center; gap: 12px;">
+              <i class="fas fa-check-circle" style="color: #10B981; font-size: 1.5rem;"></i>
+              <div>
+                <strong style="color: #065F46;">Appointment Booked!</strong>
+                <p style="margin: 0; font-size: 13px; color: #047857;">SMS confirmation sent automatically</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonial Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Success Story</span>
+        <h2 class="section-title">What Salon Owners Say</h2>
+      </div>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="testimonial-card" style="padding: 48px; text-align: center;">
+          <div class="testimonial-rating" style="justify-content: center;">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text" style="font-size: 1.25rem; max-width: 600px; margin: 24px auto;">"I was losing 10-15 calls a day while doing nails. Now every call gets answered, and my bookings are up 40%. BraniumX paid for itself in the first week."</p>
+          <div class="testimonial-author" style="justify-content: center;">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #EC4899, #DB2777);">MJ</div>
+            <div class="testimonial-info" style="text-align: left;">
+              <h4>Maria Johnson</h4>
+              <p>Owner, Bella Nails Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Results Stats -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 60px; text-align: center;">
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #EC4899;">40%</div>
+          <div style="color: var(--text-light);">More Bookings</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #EC4899;">35%</div>
+          <div style="color: var(--text-light);">Fewer No-Shows</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #EC4899;">100%</div>
+          <div style="color: var(--text-light);">Calls Answered</div>
+        </div>
+        <div style="padding: 32px; background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: #EC4899;">$2,000+</div>
+          <div style="color: var(--text-light);">Saved vs. Hiring</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How It Works -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Live in 72 Hours</h2>
+        <p class="section-subtitle">Getting started is simple—we handle all the setup for you.</p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Book a Demo</h3>
+          <p>See your AI receptionist in action. We'll show you exactly how it handles calls for nail salons.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>We Build It</h3>
+          <p>Tell us your services, prices, and hours. We create a custom AI receptionist for your salon.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Go Live</h3>
+          <p>Forward your calls and start capturing every booking. No technical skills needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Plans for Every Salon</h2>
+        <p class="section-subtitle">From solo nail techs to multi-chair salons</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-description">Perfect for solo nail techs</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">297</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>500 minutes/month</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Appointment booking</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>SMS confirmations</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Custom greeting</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>FAQ handling</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="demo.html" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Best for Salons</span>
+          <div class="pricing-header">
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-description">For busy 2-5 chair salons</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">497</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>1,500 minutes/month</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Everything in Starter</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Appointment reminders</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>No-show follow-up</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Review requests</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="demo.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Enterprise</h3>
+            <p class="pricing-description">Multi-location salons</p>
+            <div class="pricing-price">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">997</span>
+              <span class="pricing-period">+/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Unlimited minutes</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Multiple locations</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Full CRM platform</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Marketing automation</span></div>
+            <div class="pricing-feature"><i class="fas fa-check"></i><span>Dedicated support</span></div>
+          </div>
+          <div class="pricing-cta">
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      
+      <p class="pricing-note">All plans include a one-time $497 setup fee</p>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Questions from Salon Owners</h2>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can it book specific services like acrylics vs gel?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes! We program your AI with all your services, prices, and durations. It knows the difference between a gel manicure, acrylic full set, pedicure, nail art, and any other services you offer. It can even handle combo bookings.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if a client wants a specific nail tech?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>The AI can ask which technician they'd like to book with and check that specific person's availability. It handles multi-staff scheduling seamlessly.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does it work with my booking software?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>BraniumX integrates with popular salon booking systems like Vagaro, Square Appointments, Fresha, and Google Calendar. If you use a different system, let us know—we can likely integrate with it.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can it speak languages other than English?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>Yes! We offer multilingual support including Spanish, Vietnamese, Korean, Chinese, and more—perfect for serving diverse salon clientele.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What if someone calls with a complaint?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              <p>We set up custom rules for your salon. Complaints, emergencies, or complex situations can be immediately transferred to you or sent to voicemail with urgent notification. You stay in control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Capture Every Booking?</h2>
+        <p>Join hundreds of nail salons already using BraniumX to grow their business.</p>
+        <div class="cta-buttons">
+          <a href="demo.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-calendar-alt"></i>
+            Book Your Free Demo
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo">
+            Branium<span>X</span>
+          </a>
+          <p>AI-powered voice receptionists for small businesses. Never miss another customer call.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#solution" class="footer-link">Features</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="demo.html" class="footer-link">Get Demo</a></li>
+            <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Industries</h4>
+          <ul class="footer-links">
+            <li><a href="nail-salons.html" class="footer-link">Nail Salons</a></li>
+            <li><a href="dentists.html" class="footer-link">Dentists</a></li>
+            <li><a href="#" class="footer-link">Med Spas</a></li>
+            <li><a href="#" class="footer-link">Home Services</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 BraniumX LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

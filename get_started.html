@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started with BraniumX - Your AI Receptionist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #FAFAFA;
+            color: #1d1d1f;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        header img.logo {
+            max-width: 160px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #6e6e73;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-section {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            margin: 40px 0;
+        }
+
+        form {
+            display: grid;
+            gap: 24px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            display: block;
+            color: #1d1d1f;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 12px;
+            font-size: 1rem;
+            background-color: #fafafa;
+            transition: border 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0071e3;
+            box-shadow: 0 0 0 3px rgba(0,113,227,0.15);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-top: 4px;
+        }
+
+        .submit-btn {
+            background-color: #0071e3;
+            color: #ffffff;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            justify-self: center;
+            min-width: 220px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0060c0;
+        }
+
+        .success-message {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+
+        .success-message h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+
+        .success-message p {
+            font-size: 1.3rem;
+            color: #6e6e73;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            .form-section { padding: 40px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/braniumX.jpg" alt="BraniumX Logo" class="logo">
+        <h1>Get Started with BraniumX</h1>
+        <p>Fill out the form below and our team will contact you within 24 hours to set up your AI receptionist.</p>
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+            <form id="getStartedForm" action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your form handler (Formspree, etc.) -->
+                <div>
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="business">Business / Company Name *</label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+
+                <div>
+                    <label for="phone">Business Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="industry">Industry</label>
+                    <select id="industry" name="industry">
+                        <option value="">Select your industry</option>
+                        <option>Dental Clinic</option>
+                        <option>Medical Practice</option>
+                        <option>Law Firm</option>
+                        <option>Real Estate</option>
+                        <option>Salon / Spa</option>
+                        <option>Home Services</option>
+                        <option>Consulting</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="calls">Average Monthly Incoming Calls</label>
+                    <select id="calls" name="calls">
+                        <option>Fewer than 100</option>
+                        <option>100 - 300</option>
+                        <option>300 - 600</option>
+                        <option>More than 600</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Anything else we should know?</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your current phone setup, pain points, or specific needs..."></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="authorization" name="authorization" required>
+                    <label for="authorization">
+                        I authorize BraniumX to contact me via phone call, SMS, or email to discuss setting up my AI receptionist service. I understand a team member will reach out within 24 hours.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit & Get Started</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                <h2>Thank You!</h2>
+                <p>We’ve received your information. A BraniumX specialist will contact you within 24 hours to discuss your AI receptionist setup and next steps.</p>
+                <p>You’ll soon never miss another call.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('getStartedForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+            // Remove e.preventDefault() when you connect real backend
+            // For demo: show success instantly
+            e.preventDefault();
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
