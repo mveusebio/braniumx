@@ -272,7 +272,7 @@ p {
 }
 
 .navbar-logo:hover .navbar-logo-img {
-  transform: scale(1.05);
+  transform: scale(0.5);
 }
 
 /* Optional: hide text on small screens if logo is prominent */
