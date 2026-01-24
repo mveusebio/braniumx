@@ -255,7 +255,7 @@ p {
 /* Logo Styling */
 .navbar-logo {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   text-decoration: none;
   font-size: 1.8rem;
