@@ -255,8 +255,10 @@ p {
 /* Logo Styling */
 .navbar-logo {
   display: flex;
-  align-items: left;
+  align-items: center;
   gap: 10px;
+  height: 100%;
+  min-height: 100%;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 800;
@@ -265,14 +267,15 @@ p {
 .navbar-logo-img {
   height: 90%;           /* Adjust as needed */
   width: auto;
-  max-width: 180px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
-  transition: transform 0.3s ease;
+  margin: 0;
 }
 
 .navbar-logo:hover .navbar-logo-img {
-  transform: scale(1.05);
+  transform: scale(1.04);
+  transition: transform 0.25s ease;
 }
 
 /* Optional: hide text on small screens if logo is prominent */
@@ -281,8 +284,8 @@ p {
     display: none;
   }
   .navbar-logo-img {
-    height: 38px;
-    max-width: 140px;
+    height: 78%;
+    max-width: 160px;
   }
 }
 
