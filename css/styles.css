@@ -246,7 +246,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 180px;
+  height: 80px;
   max-width: var(--container-width);
   margin: 0 auto;
   padding: var(--container-padding);
