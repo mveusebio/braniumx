@@ -263,7 +263,7 @@ p {
 }
 
 .navbar-logo-img {
-  height: 80px;           /* Adjust as needed */
+  height: 90%;           /* Adjust as needed */
   width: auto;
   max-width: 180px;
   object-fit: contain;
