@@ -828,7 +828,7 @@ p {
 
 .solution-image-float {
   position: absolute;
-  bottom: -30px;
+  bottom: -70px;
   left: -30px;
   background: var(--white);
   padding: 24px;
