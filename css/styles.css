@@ -291,7 +291,7 @@ p {
 
 /* Keep original text visible as fallback if image fails to load */
 .navbar-logo-text {
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 .navbar-logo-text span {
