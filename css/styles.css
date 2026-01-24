@@ -69,7 +69,7 @@ body {
 }
 
 img {
-  max-width: 15%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -263,7 +263,7 @@ p {
 }
 
 .navbar-logo-img {
-  height: 44px;           /* Adjust as needed */
+  height: 25px;           /* Adjust as needed */
   width: auto;
   max-width: 180px;
   object-fit: contain;
