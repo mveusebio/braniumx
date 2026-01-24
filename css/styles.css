@@ -828,7 +828,7 @@ p {
 
 .solution-image-float {
   position: absolute;
-  bottom: -30px;
+  bottom: -120px;
   left: -30px;
   background: var(--white);
   padding: 24px;
@@ -841,7 +841,7 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: -30px;
+  margin-bottom: 12px;
 }
 
 .solution-image-float-icon {
