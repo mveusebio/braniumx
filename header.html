@@ -1,23 +1,36 @@
-<!-- Navigation -->
+<!-- Navigation - Universal Header (works for EN and ES) -->
 <nav class="navbar">
   <div class="navbar-container">
-    <!-- <a href="index.html" class="navbar-logo">
-      <img src="images/Logo1b.jpeg" alt="BraniumX Logo" class="navbar-logo-img">
-    </a> -->
-      <a href="index.html" class="navbar-logo-text">
-        Branium<span>X</span>
-      </a>
+    <a href="/" class="navbar-logo-text">
+      Branium<span>X</span>
+    </a>
     
     <div class="navbar-menu">
       <ul class="navbar-links">
-        <li><a href="index.html" class="navbar-link">Home</a></li>
-        <li><a href="pricing.html" class="navbar-link">Pricing</a></li>
-        <li><a href="about.html" class="navbar-link">About</a></li>
-        <li><a href="contact.html" class="navbar-link">Contact</a></li>
+        <li><a href="/" class="navbar-link">Home</a></li>
+        <li><a href="/pricing.html" class="navbar-link">Pricing</a></li>
+        <li><a href="/about.html" class="navbar-link">About</a></li>
+        <li><a href="/contact.html" class="navbar-link">Contact</a></li>
       </ul>
       
       <div class="navbar-cta">
-        <a href="demo.html" class="btn btn-primary">Get Demo</a>
+        <a href="/demo.html" class="btn btn-primary">Get Demo</a>
+      </div>
+
+      <!-- Language Switcher with Flags -->
+      <div class="language-switcher">
+        <!-- English Version -->
+        <a href="#" id="lang-en" class="lang-link" onclick="switchLang('en'); return false;" title="English">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" 
+               alt="English" 
+               class="flag-icon">
+        </a>
+        <!-- Spanish Version -->
+        <a href="#" id="lang-es" class="lang-link" onclick="switchLang('es'); return false;" title="Español">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" 
+               alt="Español" 
+               class="flag-icon">
+        </a>
       </div>
     </div>
     
@@ -32,10 +45,52 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu">
   <ul class="mobile-menu-links">
-    <li><a href="index.html" class="mobile-menu-link">Home</a></li>
-    <li><a href="pricing.html" class="mobile-menu-link">Pricing</a></li>
-    <li><a href="about.html" class="mobile-menu-link">About</a></li>
-    <li><a href="contact.html" class="mobile-menu-link">Contact</a></li>
-    <li><a href="demo.html" class="btn btn-primary" style="margin-top: 20px;">Get Demo</a></li>
+    <li><a href="/" class="mobile-menu-link">Home</a></li>
+    <li><a href="/pricing.html" class="mobile-menu-link">Pricing</a></li>
+    <li><a href="/about.html" class="mobile-menu-link">About</a></li>
+    <li><a href="/contact.html" class="mobile-menu-link">Contact</a></li>
+    <li><a href="/demo.html" class="btn btn-primary" style="margin-top: 20px;">Get Demo</a></li>
   </ul>
 </div>
+
+<!-- Tiny JavaScript for smart language switching -->
+<script>
+  function switchLang(lang) {
+    const currentPath = window.location.pathname;
+    let newPath = currentPath;
+
+    if (lang === 'es') {
+      // Switch to Spanish version
+      if (!currentPath.endsWith('-es.html') && currentPath !== '/es/') {
+        if (currentPath === '/' || currentPath === '/index.html') {
+          newPath = '/index-es.html';
+        } else {
+          newPath = currentPath.replace('.html', '-es.html');
+        }
+      }
+    } else {
+      // Switch to English version
+      if (currentPath.endsWith('-es.html')) {
+        newPath = currentPath.replace('-es.html', '.html');
+      }
+    }
+
+    if (newPath !== currentPath) {
+      window.location.href = newPath;
+    }
+  }
+
+  // Auto-detect current language and highlight correct flag
+  document.addEventListener('DOMContentLoaded', function() {
+    const isSpanish = window.location.pathname.includes('-es.html') || 
+                      window.location.pathname.startsWith('/es/');
+    
+    if (isSpanish) {
+      document.getElementById('lang-es').classList.add('current');
+      document.getElementById('lang-en').classList.remove('current');
+    } else {
+      document.getElementById('lang-en').classList.add('current');
+      document.getElementById('lang-es').classList.remove('current');
+    }
+  });
+</script>
