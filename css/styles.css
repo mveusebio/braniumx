@@ -291,11 +291,11 @@ p {
 
 /* Keep original text visible as fallback if image fails to load */
 .navbar-logo-text {
-  color: white;
+  color: var(--primary);
 }
 
 .navbar-logo-text span {
-  color: #00d4ff;
+  color: var(--secondary);
 }
 
 .navbar-menu {
