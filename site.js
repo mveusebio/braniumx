@@ -9,9 +9,9 @@
 })();
 
 /* Checkout links: paste each GoHighLevel checkout URL between the quotes.
-   While a plan is empty, its buttons send people to the demo page. */
+   If a plan is left empty, its buttons send people to the demo page. */
 (function () {
-  var CHECKOUT = { starter: "", growth: "" };
+  var CHECKOUT = { starter: "https://links.braniumx.com/checkout-starter", growth: "https://links.braniumx.com/checkout-growth" };
   document.querySelectorAll('[data-checkout]').forEach(function (a) {
     var url = CHECKOUT[a.getAttribute('data-checkout')];
     if (url) a.setAttribute('href', url);
